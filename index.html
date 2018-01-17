@@ -3,7 +3,8 @@
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <title>SML-SmartLedger</title>
 <meta name="keywords" content="SMT,smt,SmartLedger,smartledger">
 <meta name="description" content="SMT基于智能资产的去中心化资产交易平台-SmartLedger（SMT）。">
@@ -21,10 +22,10 @@
 <![endif]-->
 <style>
     body{
-        min-width: 1002px;
+        /* min-width: 1002px; */
     }
 /* 头部 */
-    #header{
+    /* #header{
         background-color: #3a5ad3;
         border-bottom: none;
     }
@@ -72,26 +73,88 @@
     .video{
         width: 100%;
         height: 100%;
+    } */
+    .navbar-default{
+        padding-right: 0;
     }
+    .navbar-nav{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+        margin-left: 0;
+    }
+    .navbar-default .navbar-brand{
+        line-height: 40px;
+        color: #fff;
+        font-size: 32px;
+    }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+        color: #fff;
+    }
+    @media (min-width: 768px) {
+        #header{
+            background-color: #3a5ad3;
+            border-bottom: none;
+        }
+        #header .navbar-default{
+            background-color: #3a5ad3;
+        }
+        .navbar-default .navbar-nav > li > a{
+            color: #fff;
+        }
+        .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+            background-color: #fff;
+        }
+    }
+    @media (max-width: 768px) {
+        #header{
+            background-color: #3a5ad3;
+            border-bottom: none;
+        }
+        #header .navbar-default{
+            background-color: #3a5ad3;
+        }
+        .navbar-default .navbar-toggle{
+            border-color: transparent;
+        }
+        .navbar-default .navbar-toggle .icon-bar{
+            background-color: #fff;
+        }
+        .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+            background-color: #fff;
+        }
+        .navbar-default .navbar-nav > li > a{
+            background-color: #fff;
+            color: #000;
+        }
+        .navbar-nav .open .dropdown-menu{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+
+    
+
+
+
 /* 头部 */
 /* banner */
     #main-slider{
         width: 100%;
         height: 100%;
-        position: relative;
+        /* position: relative; */
+        overflow: initial;
     }
     #main-slider img{
         width: 100%;
     }
     #main-slider > div{
-        position: absolute;
+        /* position: absolute; */
         z-index: 2;
         color: #fff;
-        top: 50%;
-        left: 50%;
-        margin-top: -20px;
-        margin-left: -400px;
-        width: 800px;
+        width: 100%;
+        height: 100%;
         text-align: center;
     }
     #main-slider > div > h2{
@@ -102,6 +165,27 @@
         font-size: 26px;
         font-family: pingFang-fine;
     }
+    #main-slider .item{
+        padding-top: 0;
+        position: relative;
+    }
+    .carousel-caption{
+        position: absolute;
+        top: 40%;
+        margin: 0 auto
+    }
+    .carousel-caption > h2{
+        font-size: 34px;
+    }
+    .carousel-caption > p{
+        font-size: 18px;
+    }
+    @media (max-width: 768px) {
+        .carousel-caption{
+            top: 30%;
+        }        
+    }
+
 /* banner */
 /* 第二导航 */
     #services .first{
@@ -310,6 +394,47 @@
         width: 750px;
         margin: 0 auto;
     }
+
+    @media (max-width: 768px) {
+        #services .first .row .center > p{
+            width: 100%;
+        }  
+        #services .first .add{
+            padding: 0;
+        }
+        #services .first .add > .center > div:nth-child(2){
+            padding-right: 0;
+        }
+        #services .first .add > .center > div:nth-child(3) > img{
+            left: 0;
+            top: -34px;
+            position: absolute;
+        }
+        #services .first .add > .center > div:nth-child(3){
+            position: relative;
+        }
+        #main-slider{
+            height: 100%;
+        }
+        #services .second .row > div:first-child .center h3{
+            width: 100%;
+            padding: 0 20px;
+        }
+        #services .second .row > div:first-child .center p{
+            width: 100%;
+            padding: 0 20px;
+        }
+        #services .second .row > div:nth-child(2) .center div{
+            height: 100%;
+            padding-bottom: 30px;
+        }
+        .mobile{
+            padding-bottom: 1.5em;
+        }
+        #services .three .row .center p{
+            width: 100%;
+        }
+    }
 /* 第二导航 */
 /* 第三导航 */
     #portfolio{
@@ -443,74 +568,99 @@
         font-size: 30px;
         text-align: right;
     }
+    @media (max-width: 768px) {
+        #footer .box h4{
+            font-size: 20px;
+        }
+        #clientele .number > div{
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+    }
+    
 
 /* 底部 */
 /* 锚点定位偏移 */
-#services1{
-    position: relative;
-    top: -65px;
-}
-#technology{
-    position: relative;
-    top: -65px;
-}
-#portfolio1{
-    position: relative;
-    top: -65px;
-}
-#clientele1{
-    position: relative;
-    top: -65px;
-}
-#portfolio h2{
-    margin-top: 65px;
-}
+    #services1{
+        position: relative;
+        top: -65px;
+    }
+    #technology{
+        position: relative;
+        top: -65px;
+    }
+    #portfolio1{
+        position: relative;
+        top: -65px;
+    }
+    #clientele1{
+        position: relative;
+        top: -65px;
+    }
+    #portfolio h2{
+        margin-top: 65px;
+    }
 </style>
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
 <!-- 头部菜单 -->
 <header id="header">
-    <div class="container" role="banner">
+    <div class="" role="banner">
         <div id="navbar" class="navbar-default navbar">
-            <div class="navbar-header">
-                    <h1>SML</h1>
-            </div>
-            <div class="collapse navbar-collapse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">SML</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class=""><a href="#main-slider">首页</a></li>
-                    <!-- <li class=""><a href="#services"></a></li> -->
+                    <li><a href="#main-slider">首页</a></li>
                     <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">项目介绍 <span class="caret"></span></a>
-                            <ul class="dropdown-menu" id="dropdownJump">
-                              <li><a href="#services1">奇点解决方案</a></li>
-                              <li><a href="#technology">区块链技术</a></li>
-                              <!-- <li><a href="#">市场现状</a></li>
-                              <li><a href="#">资产流动性需求</a></li> -->
-                              <!-- <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">One more separated link</a></li> -->
-                            </ul>
-                          </li>
-                    <li class=""><a href="#portfolio1">发展计划</a></li>
-                    <li class=""><a href="#clientele1">关于奇点</a></li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">项目介绍 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#services1">奇点解决方案</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#technology">区块链技术</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#portfolio1">发展计划</a></li>
+                    <li><a href="#clientele1">关于奇点</a></li>
+                    
                 </ul>
-            </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </div>
     </div>
 </header><!--/#header-->
 
 <!-- 视频 -->
 <section id="main-slider" class="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="./img/earth.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>SMT智能资产</h2>
+                        <p>基于智能资产的去中心化资产交易平台-SmartLedger</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
         <!-- <video class="video" controls preload webkit-playsinline style="object-fit:fill;">
                 设备不支持
             <source src="./1.webm" type="video/mp4">
         </video> -->
-        <img src="./img/earth.jpg" alt="">
-        <div>
-            <h2>SMT智能资产</h2>
-            <p>基于智能资产的去中心化资产交易平台-SmartLedger</p>
-        </div>
+        
 </section><!--/#main-slider-->
 <!-- 项目介绍 -->
 <section id="services">
@@ -559,25 +709,25 @@
                 </div>
                 <div class="col-md-12">
                         <div class="center">
-                                <div class="col-md-3 col-sm-3">
+                                <div class="col-md-3 col-xs-6">
                                     <img src="./img/icon3.png" alt="">
                                     <h5>资产方</h5>
                                     <p>以SMT Token奖励企业资产数字化上链</p>
                                 </div>
-                                <div class="col-md-3 col-sm-3">
+                                <div class="col-md-3 col-xs-6">
                                     <img src="./img/icon4.png" alt="">
                                     <h5>记账方</h5>
                                     <p>以SMT Token奖励成为集体选举的记账人</p>
                                 </div>
-                                <div class="col-md-3 col-sm-3">
+                                <div class="col-md-3 col-xs-6">
                                     <img src="./img/icon5.png" alt="">
                                     <h5>平台方</h5>
                                     <p>平台生态系统会对资产交易方收取一定交易费用，注入基金会</p>
                                 </div>
-                                <div class="col-md-3 col-sm-3">
+                                <div class="col-md-3 col-xs-6">
                                     <img src="./img/icon6.png" alt="">
                                     <h5>开发方</h5>
-                                    <p>用户SMT Token支付给应用开发方</p>
+                                    <p class="mobile">用户SMT Token支付给应用开发方</p>
                                 </div>
                         </div>
                     </div>
@@ -746,12 +896,12 @@
         <div class="container">
             <div class="box">
                  <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xs-6">
                         <div class="center">
                             <h4>未来已来，敬请期待</h4>
                         </div>
                     </div>
-                    <div class="col-md-6" ></div>
+                    <div class="col-md-6 col-xs-6" ></div>
                     
                 </div>
             </div><!--/.box-->
