@@ -309,7 +309,7 @@ body{
 
 /* 第三版 */
 #services .three{
-    background: url("./img/image1.jpg") no-repeat center center;
+    background: url("../img/image1.jpg") no-repeat center center;
     background-size: cover;
     color: #fff;
 }
@@ -518,7 +518,7 @@ body{
 /* 底部 */
 #footer {
     padding: 80px 0;
-    background: url("./img/image4.png") no-repeat center center;
+    background: url("../img/image4.png") no-repeat center center;
     background-size: cover;
 }
 #footer .box {
