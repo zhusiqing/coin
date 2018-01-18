@@ -182,8 +182,14 @@
     }
     @media (max-width: 768px) {
         .carousel-caption{
-            top: 30%;
-        }        
+            top: 15%;
+        }
+        .carousel-caption > h2{
+            font-size: 24px;
+        }
+        .carousel-caption > p{
+            font-size: 12px;
+        }
     }
 
 /* banner */
@@ -398,6 +404,7 @@
     @media (max-width: 768px) {
         #services .first .row .center > p{
             width: 100%;
+            font-size: 13px;
         }  
         #services .first .add{
             padding: 0;
@@ -406,12 +413,14 @@
             padding-right: 0;
         }
         #services .first .add > .center > div:nth-child(3) > img{
-            left: 0;
-            top: -34px;
+            left: 10px;
+            top: 0;
             position: absolute;
+            height: 100%;
         }
         #services .first .add > .center > div:nth-child(3){
             position: relative;
+            text-indent: 30px;
         }
         #main-slider{
             height: 100%;
@@ -431,8 +440,28 @@
         .mobile{
             padding-bottom: 1.5em;
         }
+        #services .first .add > .center{
+            height: 70px;
+        }
         #services .three .row .center p{
             width: 100%;
+        }
+        #services .first .add > .center > div:nth-child(1){
+            position: relative;
+            text-indent: 30px;
+        }
+        #services .first .add > .center > div:nth-child(1) > img{
+            position: absolute;
+            height: 100%;
+            left: 10px;
+        }
+        #services .first .add > .center > div{
+            font-size: 16px;
+            line-height: 70px;
+        }
+        #services .first .add > .center > div > span{
+            font-size: 12px;
+            display: none;
         }
     }
 /* 第二导航 */
@@ -575,6 +604,59 @@
         #clientele .number > div{
             padding-left: 15px;
             padding-right: 10px;
+        }
+        #services .second > img{
+            display: none;
+        }
+        #services .second .row > div:first-child .center h3{
+            font-size: 13px;
+        }
+        #services .second .row > div:first-child .center p{
+            font-size: 13px;
+        }
+        #services .second .row > div:nth-child(2) p{
+            width: 100%;
+        }
+        #portfolio .row .step .line{
+            display: none;
+        }
+        #portfolio .row .step:nth-child(2n) .top{
+            display: none;
+        }
+        #portfolio .box{
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 0;
+        }
+        #portfolio .row .step{
+            padding-left: 2px;
+            padding-right: 2px;
+            text-align: center;
+        }
+        #clientele h2{
+            font-size: 21px;
+        }
+        #clientele .box:first-child .row > h5{
+            font-size: 14px;
+        }
+        #clientele .box:first-child .row > h3{
+            font-size: 14px;
+        }
+        #clientele .box:first-child .row > p{
+            font-size: 14px;
+        }
+        #clientele .row > div > img{
+            width: 100%;
+            margin: 20px 0;
+        }
+        #clientele .number .big{
+            font-size: 40px;
+        }
+        #clientele .number h4{
+            font-size: 16px;
+        }
+        #clientele .number > div > p{
+            font-size: 13px;
         }
     }
     
@@ -881,16 +963,6 @@
         </div>
     </div>
 </section><!--/#clientele-->
-<!-- 关于我们 -->
-<!-- <section id="aboutus">
-    
-</section> -->
-<!--/#aboutus-->
-<!-- 联系我们 -->
-<!-- <section id="contactus">
-    
-</section> -->
-<!--/#contactus-->
 <section id="footer">
     <section id="footer1"></section>
         <div class="container">
@@ -907,54 +979,18 @@
             </div><!--/.box-->
         </div><!--/.container-->
     </section>
-<!-- footer -->
-<!-- <footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12" style="font-size:16px;">
-            	Copyright © 2017 Xiaofengche Inc. 保留所有权利。&nbsp;&nbsp;
-                蜀ICP备15020376号-1
-            </div>
-        </div>
-    </div>
-</footer> -->
-<!--/#footer-->
-<!--在线客服  -->
-<!-- <div class="scrollsidebar" id="scrollsidebar" style="top: 249px;">
-  <div class="side_content" style="width: 0px;">
-    <div class="side_list">
-      <div class="side_title"><a title="隐藏" class="close_btn"><span>关闭</span></a></div>
-      <div class="side_center">
-        <div class="custom_service">
-          <p> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=459104018&amp;site=qq&amp;menu=yes"><img border="0" src="./成都小风车科技有限公司－官网首页_files/pa" alt="点击这里给我发消息" title="点击这里给我发消息"></a> </p>
-        </div>
-        <div class="other">
-          <p>
-          合作洽谈QQ：<br>
-          459104018<br>
-          合作洽谈微信：<br>
-          <img src="./成都小风车科技有限公司－官网首页_files/qrcode.png" width="100" style="margin-top: 5px;"></p>
-          <p>客户服务热线<br>028-67871837<br>13568933413</p>
-        </div>
-      </div>
-      <div class="side_bottom"></div>
-    </div>
-  </div>
-  <div class="show_btn" style="width: 25px;"><span>在线客服</span></div>
-</div> -->
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.js"></script>
 <script src="./js/happy.js"></script>
 <script src="./js/kefu.js"></script>
 <script>
     $(function(){
-        $(window).scroll(function(){
-            console.log($(document).scrollTop < 65);
-        })
+        // $(window).scroll(function(){
+        //     console.log($(document).scrollTop < 65);
+        // })
         $(document).on("click",".dropdown-toggle",function(){
             // if( $(window).width() > 767 )
             if($(this).attr('href')){
-                console.log(1);
                 window.location = $(this).attr('href');
             }
         });
