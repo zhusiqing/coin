@@ -591,7 +591,9 @@ body{
         font-size: 13px;
     }
     .box .box_title h2{
-        white-space: nowrap;
+        text-align: center;
+        width: 100%;
+        padding: 5px 10px 10px 10px;
     }
     #services .three .row .center h3{
         line-height: 1.3em;
@@ -602,6 +604,14 @@ body{
     }
     #portfolio .row .step .top{
         margin: 0;
+    }
+    #footer{
+        background-color: #577af9;
+        background-image: none;
+        padding: 20px 0;
+    }
+    #footer .box h4{
+        display: none;
     }
 }
 
