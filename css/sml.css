@@ -178,10 +178,10 @@ body{
     
 }
 #services .first .add > .center > div:nth-child(1){
-    flex: 0 1 350px;
+    /*flex: 0 1 350px;*/
 }
 #services .first .add > .center > div:nth-child(3){
-    flex: 0 1 350px;
+    /*flex: 0 1 350px;*/
 }
 #services .first .add > .center > div:nth-child(2){
     flex: 0 1 30px;
