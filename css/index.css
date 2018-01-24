@@ -357,6 +357,7 @@ p{
     background: -prefix-linear-gradient(left top, #154bb8, #1f2b58);
     background:url('../img/bg1.png'), linear-gradient(to bottom right, #154bb8, #1f2b58);
     background-position: 0 center;
+    background-repeat: no-repeat;
 }
 .be_found .container > .row{
     color: #adadad;
