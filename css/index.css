@@ -420,6 +420,22 @@ p{
 }
 .testimonials .features-list .star-container > img{
     width: 130px;
+    position: relative;
+}
+.testimonials .features-list .star-container > .blur{
+    width: 130px;
+    position: relative;
+    margin: 0 auto;
+}
+.testimonials .features-list .star-container > .blur::after{
+    content: '\0020';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 4px #090d26,0 0 30px 4px #090d26 inset;
 }
 .testimonials .features-list .details{
     padding: 0 30px;
