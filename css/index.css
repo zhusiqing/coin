@@ -1,0 +1,684 @@
+.color-blue{
+    color: #00d3e0;
+    font-size: 24px;
+}
+h3{
+    font-size: 36px;
+}
+h5{
+    font-size: 22px;
+}
+p{
+    font-size: 18px;
+}
+/* 导航栏 */
+.navbar h1{
+    margin-bottom: 0;
+}
+.navbar .navbar-brand > span{
+    vertical-align: bottom;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+        display: flex;
+        align-items: center;
+}
+.navbar-brand h1{
+    margin: 0;
+    color: #fff;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+    color: #fff;
+}
+.navbar-default .navbar-brand{
+    color: #fff;
+}
+.nav>li.active>a, .nav>li.active>a:hover{
+    background-color: #3b54b6;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: #3b54b6;
+}
+.navbar-default{
+    background-color: #0c132e;
+}
+.nav li a{
+    color: #fff;
+    font-size: 16px;
+}
+.btn-trial{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn-trial:hover{
+    color: #aaa;
+    border-color: #aaa;
+    background-color: transparent;
+}
+.content-div{
+    bottom: 50%;
+}
+/* 视频 */
+.video .row .content-div a{
+    padding: 10px 35px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+.video .row .content-div a:hover{
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #aaa;
+    border-color: #aaa;
+}
+.video .row .content-div a > img{
+    width: 1.5em;
+    margin-left: 1.5em;
+}
+.video-button{
+    margin-top: 50px;
+}
+/* 3.0时代 */
+.trial{
+    background: url('../img/bg3.png') center center no-repeat;
+    background-size: cover;
+}
+.trial .mobile{
+    display: none;
+}
+.trial .content{
+    color: #fff;
+}
+.trial .percentage{
+    color: #fff;
+}
+.trial .content-title{
+    color: #ddd;
+}
+.trial .content-bottom{
+    color: #ddd;
+}
+.trial .content-bottom h5{
+    color: #fff;
+}
+/* 1 */
+.trial .block1{
+    position: relative;
+    background: url('../img/block1.png') center 0 no-repeat;
+    background-size: 300px 400px;
+    height: 400px;
+}
+.trial .block1 .percentage{
+    position: absolute;
+    width: 8em;
+    top: 50px;
+    left: 50%;
+    margin-left: -4em;
+}
+.trial .block1 .percentage > span{
+    display: inline-block;
+    font-size: 30px;
+    width: 8em;
+    margin-top: 20px;
+}
+.trial .block1 .content-title{
+    position: absolute;
+    font-size: 18px;
+    width: 14em;
+    bottom: 117px;
+    left: 50%;
+    margin-left: -7em;
+}
+.trial .block1 .content-title > div{
+    position: relative;
+    margin-top: 40px;
+}
+.trial .block1 .content-title > div::before{
+    content: '\0020';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #404b76;
+    opacity: 0.8;
+    top: -20px;
+    left: 50%;
+    margin-left: -50%;
+}
+/* 2 */
+.trial .block2{
+    position: relative;
+    background: url('../img/block2.png') center 0 no-repeat;
+    background-size: 300px 400px;
+    height: 400px;
+}
+.trial .block2 .percentage{
+    position: absolute;
+    width: 8em;
+    top: 50px;
+    left: 50%;
+    margin-left: -4em;
+}
+.trial .block2 .percentage > span{
+    display: inline-block;
+    font-size: 30px;
+    width: 8em;
+    margin-top: 20px;
+}
+.trial .block2 .content-title{
+    position: absolute;
+    font-size: 18px;
+    width: 14em;
+    bottom: 90px;
+    left: 50%;
+    margin-left: -7em;
+}
+.trial .block2 .content-title > div{
+    position: relative;
+    margin-top: 40px;
+}
+.trial .block2 .content-title > div::before{
+    content: '\0020';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #3e4f89;
+    opacity: 0.8;
+    top: -20px;
+    left: 50%;
+    margin-left: -50%;
+}
+/* 3 */
+.trial .block3{
+    position: relative;
+    background: url('../img/block3.png') center 0 no-repeat;
+    background-size: 300px 400px;
+    height: 400px;
+}
+.trial .block3 .percentage{
+    position: absolute;
+    width: 8em;
+    top: 50px;
+    left: 50%;
+    margin-left: -4em;
+}
+.trial .block3 .percentage > span{
+    display: inline-block;
+    font-size: 30px;
+    width: 8em;
+    margin-top: 20px;
+}
+.trial .block3 .content-title{
+    position: absolute;
+    font-size: 18px;
+    width: 14em;
+    bottom: 64px;
+    left: 50%;
+    margin-left: -7em;
+}
+.trial .block3 .content-title > div{
+    position: relative;
+    margin-top: 40px;
+}
+.trial .block3 .content-title > div::before{
+    content: '\0020';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #3650ac;
+    opacity: 0.8;
+    top: -20px;
+    left: 50%;
+    margin-left: -50%;
+}
+.trial .content .content-bottom h5{
+    margin-top: 35px;
+}
+.trial .content .content-bottom p{
+    margin-top: 35px;
+    padding: 0 50px;
+}
+/* 智能资产 */
+.solution{
+    background-color: #0c132e;
+}
+.solution .content h5{
+    color: #fff;
+    text-align: left;
+}
+.solution .content p{
+    color: #adadad;
+    text-align: left;
+}
+.solution .content > div{
+    display: flex;
+    justify-content: center;
+}
+.solution .content > div > .img{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+.solution .content > div > .img img{
+    width: 90px;
+}
+.solution .content > div > div{
+    flex: 4;
+}
+.solution .assets-img img{
+    width: 100%;
+}
+
+.how_it_works, .solution{
+    border-top: none; 
+}
+/* 资产交易 */
+.how_it_works{
+    padding: 110px 0;
+    background: url('../img/bg4.png') center 0 no-repeat;
+    background-size: cover;
+}
+.how_it_works .container > .row > div{
+    padding-left: 120px;
+}
+.how_it_works .text-height{
+    margin-top: 20px;
+}
+.how_it_works .content > div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.how_it_works .content > div > .img{
+    flex: 1;
+}
+.how_it_works .content > div > .img > img{
+    width: 100px;
+}
+.how_it_works .content > div > div{
+    flex: 4;
+    text-align: left;
+}
+.how_it_works .content > div > div p{
+    font-size: 18px;
+    color: #adadad;
+}
+.how_it_works .content > div h5{
+    color: #fff;
+}
+/* 经济系统 */
+.features{
+    background-color: #1d264a;
+}
+.features .section-heading:after{
+    border: none;
+}
+.features .assets-img img{
+    width: 100%;
+}
+.features .classification{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    padding-bottom: 60px;
+}
+.features .classification span{
+    flex: 1;
+    padding: 10px;
+    color: #ddd;
+}
+.features .classification span:nth-child(1){
+    background-color: #212c5b;
+}
+.features .classification span:nth-child(2){
+    background-color: #28356e;
+}
+.features .classification span:nth-child(3){
+    background-color: #2f3d7d;
+}
+.features .classification span:nth-child(4){
+    background-color: #334289;
+}
+.features .text-height{
+    padding-top: 20px;
+}
+.features .text-2{
+    padding: 0 10px;
+    font-size: 18px;
+    padding-bottom: 40px;
+    color: #adadad;
+}
+/* 资产合约 */
+.be_found{
+    background: -prefix-linear-gradient(left top, #154bb8, #1f2b58);
+    background:url('../img/bg1.png'), linear-gradient(to bottom right, #154bb8, #1f2b58);
+    background-position: 0 center;
+}
+.be_found .container > .row{
+    color: #adadad;
+}
+.section-heading{
+    color: #fff;
+}
+.section-heading:after{
+    border: none;
+}
+.add-review{
+    color: #fff;
+}
+.description{
+    color: #adadad;
+    font-size: 18px;
+    line-height: 2em;
+    margin-top: 0;
+}
+.be_found .content{
+    text-align: center;
+    padding-top: 50px;
+}
+.be_found .content .content-img{
+   display: flex;
+   justify-content: center;
+}
+.be_found .content .content-img > div{
+    padding: 30px;
+}
+.be_found .content .content-img > div > p{
+    margin-top: 30px;
+    font-size: 22px;
+}
+.be_found .text-height{
+    padding: 12px 0;
+}
+.be_found .text-2{
+    font-size: 18px;
+}
+/* 顾问 */
+.testimonials{
+    background-image: url('../img/bg2.png');
+    padding-top: 0;
+}
+.testimonials .container > .row > div:last-child{
+    margin-bottom: 80px;
+}
+.features-list:hover .feature-icons, .features-list:hover .feature-title{
+    color: #fff;
+}
+.features-list:hover .details{
+    color: #a1a7b2;
+}
+.features-list:hover, .rating-input, .slider, .ui-pnotify.click-2-close{
+    cursor: default;
+}
+.testimonials .character{
+    overflow-x: hidden;
+}
+.testimonials .features-list .star-container > img{
+    width: 130px;
+}
+.testimonials .features-list .details{
+    padding: 0 30px;
+    font-size: 16px;
+    color: #adadad;
+}
+/* footer */
+footer{
+    background-color: #1d264a;
+}
+footer h2{
+    color: #fff;
+    font-size: 34px;
+}
+footer h2 > span{
+    font-size: 24px;
+}
+footer p{
+    color: #ddd;
+    font-size: 22px;
+}
+.testimonials footer > .row > div{
+    margin-bottom: 0;
+}
+
+
+/* 移动端适配 */
+@media (max-width:768px) {
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        background-color: transparent;
+    }
+    .navbar-brand h1{
+        padding-left: 30px;
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+    .navbar .navbar-brand > span{
+        font-size: 16px;
+    }
+    .navbar-toggle{
+        padding: 6px 6px;
+        margin-top: 20px;
+    }
+    .btn-trial{
+        margin: 10px auto;
+        float: initial;
+        display: block;
+        width: 120px;
+    }
+    .playbtn-container > div:first-child{
+        overflow: hidden;
+    }
+    .overlay{
+        width: 120%;
+        max-width: 120%;
+    }
+    .video{
+        padding: 66px 0 0;
+    }
+    .content-div{
+        position: absolute;
+        top: 10%;
+    }
+    .video-title{
+        font-size: 22px;
+    }
+    .video-tag{
+        font-size: 18px;
+        padding: 0 66px;
+    }
+    .video-button{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video .row .content-div a{
+        padding: 5px 20px;
+        width: 11em;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .video .row .content-div a > img{
+        width: 1em;
+    }
+    .color-blue{
+        font-size: 16px;
+    }
+    .trial .content{
+        display: none;
+    }
+    .trial .mobile{
+        display: initial;
+    }
+    .trial .mobile .box{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        width: 100%;
+    }
+    .mobile .box .percentage{
+        text-align: left;
+        font-size: 18px;
+        width: 130px;
+        padding: 0 5px;
+        padding-top: 5px;
+        opacity: 0.8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mobile .box .content-title{
+        text-align: left;
+        width: 250px;
+        line-height: 2em;
+        flex: 1;
+        opacity: 0.8;
+        padding: 10px 0;
+        padding-left: 8px;
+    }
+    .percentage span{
+        font-size: 15px;
+    }
+    .mobile > div:nth-child(1) .box .percentage{
+        background-color: #404b76;
+    }
+    .mobile > div:nth-child(2) .box .percentage{
+        background-color: #3e4f89;
+    }
+    .mobile > div:nth-child(3) .box .percentage{
+        background-color: #364faa;
+    }
+    .mobile > div:nth-child(1) .box .content-title{
+        background-color: #404b76;
+        background: -prefix-linear-gradient(left, transparent, #404b76); 
+        background: linear-gradient(to right, transparent, #404b76); 
+    }
+    .mobile > div:nth-child(2) .box .content-title{
+        background-color: #3e4f89;
+        background: -prefix-linear-gradient(left, transparent, #3e4f89); 
+        background: linear-gradient(to right, transparent, #3e4f89); 
+    }
+    .mobile > div:nth-child(3) .box .content-title{
+        background-color: #364faa;
+        background: -prefix-linear-gradient(left, transparent, #364faa); 
+        background: linear-gradient(to right, transparent, #364faa); 
+    }
+    .trial .content-bottom{
+        margin-top: 50px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .trial .content-bottom p{
+        padding: 0 20px;
+    }
+    .solution .content > div > .img{
+        display: none;
+    }
+    .solution .content h5{
+        text-align: center;
+        font-size: 16px;
+    }
+    .solution .content p{
+        text-align: center;
+    }
+    .be_found .text-2{
+        font-size: 14px;
+    }
+    .be_found .content .content-img > div{
+        padding-bottom: 0;
+    }
+    .add-review{
+        font-size: 18px;
+    }
+    .be_found .content .content-img > div > img{
+        width: 60px;
+        height: 60px;
+    }
+    .be_found .content .content-img > div > p{
+        font-size: 15px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .how_it_works{
+        padding: 50px 0;
+    }
+    .how_it_works .container > .row > div{
+        padding: 0 20px;
+    }
+    .how_it_works .content > div > .img{
+        display: none;
+    }
+    .how_it_works .content > div h5{
+        text-align: center;
+        font-size: 18px;
+    }
+    .how_it_works .content > div > div p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .features .text-2{
+        font-size: 14px;
+    }
+    .features .classification{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .testimonials{
+        padding-bottom: 50px;
+    }
+    .testimonials .content-middle{
+        margin-top: 30px;
+    }
+    .testimonials .features-list .details{
+        font-size: 14px;
+    }
+    .testimonials .container > .row{
+        margin-top: 50px;
+    }
+    footer h2{
+        font-size: 24px;
+    }
+    footer h2 > span{
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 320px) {
+    /* .trial{
+        padding: 90px 0 20px;
+    } */
+    .playbtn-container > div:first-child{
+        overflow: hidden;
+    }
+    .overlay{
+        width: 180%;
+        max-width: 180%;
+    }
+    .trial .content-bottom h5{
+        font-size: 16px;
+    }
+    .add-review{
+        font-size: 16px;
+    }
+    .be_found .content .content-img > div > p{
+        font-size: 15px;
+    }
+    .how_it_works .content > div h5{
+        font-size: 17px;
+    }
+   
+}
