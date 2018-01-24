@@ -501,10 +501,12 @@ footer p{
     }
     .video-title{
         font-size: 22px;
+        font-weight: 500;
     }
     .video-tag{
         font-size: 18px;
         padding: 0 66px;
+        font-weight: 500;
     }
     .video-button{
         margin-top: 0;
@@ -517,6 +519,7 @@ footer p{
         width: 11em;
         margin-bottom: 10px;
         font-size: 12px;
+        font-weight: 500;
     }
     .video .row .content-div a > img{
         width: 1em;
@@ -603,6 +606,9 @@ footer p{
         text-align: center;
         font-size: 16px;
     }
+    .solution .content{
+        margin-top: 0;
+    }
     .solution .content p{
         text-align: center;
     }
@@ -621,6 +627,12 @@ footer p{
     }
     .be_found .content .content-img > div > p{
         font-size: 15px;
+    }
+    .be_found .text-height{
+        padding-top: 0;
+    }
+    .be_found .content{
+        padding-top: 0;
     }
     .description{
         font-size: 14px;
@@ -642,11 +654,20 @@ footer p{
         text-align: center;
         font-size: 14px;
     }
+    .how_it_works .text-height{
+        margin-top: 0;
+    }
+    .how_it_works .container > .row > div > .content{
+        margin-top: 0;
+    }
     .features .text-2{
         font-size: 14px;
     }
     .features .classification{
         font-size: 15px;
+    }
+    .features .text-height{
+        padding-top: 0;
     }
     h3{
         font-size: 18px;
@@ -661,7 +682,10 @@ footer p{
         font-size: 14px;
     }
     .testimonials .container > .row{
-        margin-top: 50px;
+        margin-top: 20px;
+    }
+    .testimonials .container > .row > div:last-child{
+        margin-top: 40px;
     }
     footer h2{
         font-size: 24px;
