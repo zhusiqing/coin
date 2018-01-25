@@ -32,7 +32,6 @@
 
     $(document).ready(function() {
         var video = document.getElementById('video');
-
         video.addEventListener('ended', function(){
             // this check is to differentiate seek and actual pause
             if (video.readyState === 4) {
@@ -55,7 +54,11 @@
             $(this).hide();
             video.play();
         });
-
+        $('#closeVideo').click(function(){
+            playVideo(video);
+            $("#videoModal").click();
+        });
+        
         $(document).on('click', '#play-pause', function() {
             playVideo(video);
         });
@@ -78,11 +81,11 @@
     var _dcs = _dcs || {};
     _dcs.account = '8232966';
 
-    (function() {
-        var dc = document.createElement('script');
-        dc.type = 'text/javascript'; dc.async = true;
-        dc.src = '//tag.getdrip.com/8232966.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(dc, s);
-    })();
+    // (function() {
+    //     var dc = document.createElement('script');
+    //     dc.type = 'text/javascript'; dc.async = true;
+    //     dc.src = '//tag.getdrip.com/8232966.js';
+    //     var s = document.getElementsByTagName('script')[0];
+    //     s.parentNode.insertBefore(dc, s);
+    // })();
 

@@ -465,7 +465,19 @@ footer p{
 .testimonials footer > .row > div{
     margin-bottom: 0;
 }
-
+#closeVideo{
+    position: absolute;
+    right: 3%;
+    top: -2%;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+    cursor: pointer;
+}
+.testimonials .img-responsive{
+    width: 130px;
+    height: 130px;
+}
 
 /* 移动端适配 */
 @media (max-width:768px) {
