@@ -441,10 +441,11 @@ p{
     padding: 0 30px;
     font-size: 16px;
     color: #adadad;
+    margin-bottom: 70px;
 }
 .testimonials .content-middle{
     height: 40px;
-    margin-top: 40px;
+    padding: 25px 0 0;
 }
 /* footer */
 footer{
@@ -718,7 +719,8 @@ footer p{
         padding-bottom: 50px;
     }
     .testimonials .content-middle{
-        margin-top: 30px;
+        /* margin-top: 30px; */
+        margin: 0;
     }
     .testimonials .features-list .details{
         font-size: 14px;
