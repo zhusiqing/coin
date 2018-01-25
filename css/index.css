@@ -434,13 +434,17 @@ p{
     height: 100%;
     top: 0;
     left: 0;
-    border-radius: 50%;
-    box-shadow: 0 0 30px 4px #090d26,0 0 30px 4px #090d26 inset;
+    /* border-radius: 50%; */
+    /* box-shadow: 0 0 30px 4px #090d26,0 0 30px 4px #090d26 inset; */
 }
 .testimonials .features-list .details{
     padding: 0 30px;
     font-size: 16px;
     color: #adadad;
+}
+.testimonials .content-middle{
+    height: 40px;
+    margin-top: 40px;
 }
 /* footer */
 footer{
