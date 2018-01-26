@@ -509,6 +509,10 @@ footer p{
         width: 120%;
         max-width: 120%;
     }
+    #closeVideo{
+        right: 0%;
+        top: -5%;
+    }
     .video{
         padding: 66px 0 0;
     }
