@@ -478,7 +478,21 @@ footer p{
     width: 130px;
     height: 130px;
 }
-
+.testimonials #carousel-example-generic .glyphicon-chevron-right:before{
+    content: '\21E8'
+}
+.testimonials #carousel-example-generic .glyphicon-chevron-left:before{
+    content: '\21E6'
+}
+.testimonials #carousel-example-generic{
+    display: block;
+}
+.testimonials #carousel-example-generic .carousel-control{
+    background-image: none;
+}
+.testimonials #mbCharacter{
+    display: none;
+}
 /* 移动端适配 */
 @media (max-width:768px) {
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
@@ -732,7 +746,7 @@ footer p{
         font-size: 18px;
     }
     .testimonials{
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
     }
     .testimonials .content-middle{
         /* margin-top: 30px; */
@@ -746,6 +760,29 @@ footer p{
     }
     .testimonials .container > .row > div:last-child{
         margin-top: 40px;
+    }
+    .testimonials #carousel-example-generic{
+        display: none;
+    }
+    .testimonials #mbCharacter{
+        display: block;
+        margin-bottom: 0;
+    }
+    .testimonials #mbCharacter .feature-title {
+        text-align: center;
+    }
+    .testimonials #mbCharacter .details{
+        text-align: center;
+        height: 70px;
+    }
+    .testimonials #mbCharacter .glyphicon-chevron-right:before{
+        content: '\21E8'
+    }
+    .testimonials #mbCharacter .glyphicon-chevron-left:before{
+        content: '\21E6'
+    }
+    .testimonials #mbCharacter .carousel-control{
+        background-image: none;
     }
     footer h2{
         font-size: 24px;
