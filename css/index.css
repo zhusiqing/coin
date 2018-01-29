@@ -11,6 +11,10 @@ h5{
 p{
     font-size: 18px;
 }
+.section-heading{
+    text-transform: initial;
+}
+
 /* 导航栏 */
 .navbar h1{
     margin-bottom: 0;
