@@ -25,6 +25,7 @@ p{
 .navbar-brand h1{
     margin: 0;
     color: #fff;
+    font-weight: 900;
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
     color: #fff;
@@ -355,7 +356,7 @@ p{
 /* 资产合约 */
 .be_found{
     background: -prefix-linear-gradient(left top, #154bb8, #1f2b58);
-    background:url('../img/bg1.webp'), linear-gradient(to bottom right, #154bb8, #1f2b58);
+    background: linear-gradient(to bottom right, #154bb8, #1f2b58);
     background-position: 0 center;
     background-repeat: no-repeat;
 }
