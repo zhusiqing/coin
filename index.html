@@ -11,9 +11,9 @@
 <link href="./css/font-awesome.min.css" rel="stylesheet">
 <link href="./css/app.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/style_cc.css">
+<link rel="stylesheet" href="./css/swiper.min.css">
 
 <link rel="stylesheet" href="./css/index.css">
-<!-- css for slider -->
 
 
 <!--[if lt IE 9]>
@@ -211,10 +211,8 @@
             <div class="clearfix"></div>
         </div>
         <div class="col-md-12">
-<!-- <img src="./img/bg1.png" alt=""> -->
             <div class="row content">
                 <div class="col-md-6 col-sm-6">
-                    <!-- <img src="./Confident Customer Converts Visitors into Buyers_files/img2.png" class="img-responsive" alt="Ratings"> -->
                     <h5 class="add-review">智能资产证明合约</h5>
                     <div class="content-img">
                         <div>
@@ -501,14 +499,7 @@
             </div>
 
             <div id="mbCharacter" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <!-- <ol class="carousel-indicators">
-                    <li data-target="#mbCharacter" data-slide-to="0" class="active"></li>
-                    <li data-target="#mbCharacter" data-slide-to="1"></li>
-                    <li data-target="#mbCharacter" data-slide-to="2"></li>
-                </ol> -->
-                
-                <!-- Wrapper for slides -->
+
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <div class="col-md-4 col-sm-12 col-xs-12">
@@ -808,7 +799,7 @@
                 <div class="wrapper">
                     <span id="closeVideo">X</span>
                     <video id="video" onclick="playVideo(this);" controlslist="nodownload">
-                        <source src="https://videos.confidentcustomer.com/assets/ConfidentCustomer.mp4" type="video/mp4">
+                        <source src="./Jan 22 2018 2_01 PM.webm" type="video/mp4">
                     </video>
                     <div id="control">
                         <button class="my-btn" id="video-replay"></button>
@@ -820,38 +811,45 @@
     </div>
 </div>
 
-
-<!-- javascript libraries -->
-<!--<script src="https://confidentcustomer.com/js/jquery.min.js"></script>-->
-<!-- adding below two new js-->
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
 <script src="./js/custome.js"></script>
-
+<script src="./js/swiper.min.js"></script>
 <script>
-$(function(){
-    var nav =$('header > nav');
-    $(window).on('scroll',function(){
-        if($(document).scrollTop() >= 72){
-            nav.css('opacity',0.8);
-        }else{
-            nav.css('opacity',1);
-        }
+    $(function(){
+        var nav =$('header > nav');
+        $(window).on('scroll',function(){
+            if($(document).scrollTop() >= 72){
+                nav.css('opacity',0.8);
+            }else{
+                nav.css('opacity',1);
+            }
+        });
+        var nav = $('#bs-example-navbar-collapse-1');
+        var navs = $('#bs-example-navbar-collapse-1 > ul > li');
+        var download = $('#bs-example-navbar-collapse-1 > ul > a');
+        navs.click(function(){
+            nav.removeClass('in');
+        });
+        download.click(function(){
+            nav.removeClass('in');
+        });
+        var character = $('#mbCharacter');
+        var startX,endX;
+        var offset = 50;
+        character.on('touchstart',function(e){
+            startX = e.originalEvent.touches[0].clientX;
+        }).on('touchmove',function(e){
+            endX = e.originalEvent.touches[0].clientX;
+        }).on('touchend',function(e){
+            var distance = Math.abs(startX-endX);
+            if(distance>offset){
+                $(this).carousel(startX>endX?'next':'prev');
+            }
+        })
     });
-    var nav = $('#bs-example-navbar-collapse-1');
-    var navs = $('#bs-example-navbar-collapse-1 > ul > li');
-    var download = $('#bs-example-navbar-collapse-1 > ul > a');
-    navs.click(function(){
-        nav.removeClass('in');
-    });
-    download.click(function(){
-        nav.removeClass('in');
-    });
-    var pcCharacter = $('#carousel-example-generic');
-    var mbCharacter = $('#mbCharacter');
-});
 </script>
 
 </body>
