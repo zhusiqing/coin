@@ -83,7 +83,7 @@ p{
 }
 /* 3.0时代 */
 .trial{
-    background: url('../img/bg3.png') center center no-repeat;
+    background: url('../img/bg3.webp') center center no-repeat;
     background-size: cover;
 }
 .trial .mobile{
@@ -279,7 +279,7 @@ p{
 /* 资产交易 */
 .how_it_works{
     padding: 110px 0;
-    background: url('../img/bg4.png') center 0 no-repeat;
+    background: url('../img/bg4.webp') center 0 no-repeat;
     background-size: cover;
 }
 .how_it_works .container > .row > div{
@@ -355,7 +355,7 @@ p{
 /* 资产合约 */
 .be_found{
     background: -prefix-linear-gradient(left top, #154bb8, #1f2b58);
-    background:url('../img/bg1.png'), linear-gradient(to bottom right, #154bb8, #1f2b58);
+    background:url('../img/bg1.webp'), linear-gradient(to bottom right, #154bb8, #1f2b58);
     background-position: 0 center;
     background-repeat: no-repeat;
 }
@@ -400,7 +400,7 @@ p{
 }
 /* 顾问 */
 .testimonials{
-    background-image: url('../img/bg2.png');
+    background-image: url('../img/bg2.webp');
     padding-top: 0;
 }
 .testimonials .container > .row > div:last-child{
