@@ -507,6 +507,7 @@ footer .row{
     top: 20%;
     display: flex;
     justify-content: flex-end;
+    z-index: 2;
 }
 .link a{
     padding: 0 10px;
