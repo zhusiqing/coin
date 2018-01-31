@@ -498,6 +498,28 @@ footer p{
 .testimonials #mbCharacter{
     display: none;
 }
+footer .row{
+    position: relative;
+}
+.link{
+    position: absolute;
+    top: 2em;
+    right: 0;
+}
+.link a{
+    float: right;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.link a:hover{
+    color: #aaa;
+}
+
+
+
+
 /* 移动端适配 */
 @media (max-width:768px) {
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
