@@ -503,12 +503,12 @@ footer .row{
 }
 .link{
     position: absolute;
-    top: 2em;
-    right: 0;
+    top: 20%;
+    display: flex;
+    justify-content: flex-end;
 }
 .link a{
-    float: right;
-    margin-right: 20px;
+    padding: 0 10px;
     text-decoration: none;
     color: #fff;
     cursor: pointer;
@@ -819,6 +819,20 @@ footer .row{
     }
     footer p{
         font-size: 15px;
+    }
+    footer .row{
+        position: relative;
+    }
+    .link{
+        float: initial;
+        position: absolute;
+        width: 100%;
+        top: -10%;
+        right: 50%;
+        margin-right: -50%;
+        text-align: center;
+        top: -10%;
+        justify-content: center;
     }
     
 }
