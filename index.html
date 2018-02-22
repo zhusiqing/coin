@@ -1013,24 +1013,87 @@
         if(window.navigator.language === 'zh-CN'){
             $("[data-localize]").localize("sap");
         }else if(window.navigator.language === 'en'){
+            if($('#enCss')){
+                $('#enCss').remove();
+                $("<link>")
+                    .attr({ rel: "stylesheet",
+                    type: "text/css",
+                    href: "./css/en.css",
+                    id: 'enCss'
+                    })
+                    .appendTo("head");
+            }else{
+                $("<link>")
+                    .attr({ rel: "stylesheet",
+                    type: "text/css",
+                    href: "./css/en.css",
+                    id: 'enCss'
+                    })
+                    .appendTo("head");
+            }
             $("[data-localize]").localize("sap", { language: "en" });
         }
         var sessionLang = sessionStorage.getItem('lang');
         console.log(sessionLang);
         if(sessionLang === 'en'){
+            if($('#enCss')){
+                $('#enCss').remove();
+                $("<link>")
+                    .attr({ rel: "stylesheet",
+                    type: "text/css",
+                    href: "./css/en.css",
+                    id: 'enCss'
+                    })
+                    .appendTo("head");
+            }else{
+                $("<link>")
+                    .attr({ rel: "stylesheet",
+                    type: "text/css",
+                    href: "./css/en.css",
+                    id: 'enCss'
+                    })
+                    .appendTo("head");
+            }
             $("[data-localize]").localize("sap", { language: "en" });
         }else if(sessionLang === 'zh-CN'){
+            if($('#enCss')){
+                $('#enCss').remove();
+            }
             $("[data-localize]").localize("sap");
         }else{
+            if($('#enCss')){
+                $('#enCss').remove();
+            }
             $("[data-localize]").localize("sap");
         }
         
         $("a.lang").click(function(e){
             console.log(e.target.innerHTML);
             if(e.target.innerHTML === 'EN'){
+                if($('#enCss')){
+                    $('#enCss').remove();
+                    $("<link>")
+                        .attr({ rel: "stylesheet",
+                        type: "text/css",
+                        href: "./css/en.css",
+                        id: 'enCss'
+                        })
+                        .appendTo("head");
+                }else{
+                    $("<link>")
+                        .attr({ rel: "stylesheet",
+                        type: "text/css",
+                        href: "./css/en.css",
+                        id: 'enCss'
+                        })
+                        .appendTo("head");
+                }
                 $("[data-localize]").localize("sap", { language: "en" });
                 sessionStorage.setItem('lang','en');
             }else if(e.target.innerHTML === '中文'){
+                if($('#enCss')){
+                    $('#enCss').remove();
+                }
                 $("[data-localize]").localize("sap");
                 sessionStorage.setItem('lang','zh-CN');
             }
