@@ -28,4 +28,4 @@ var server = http.createServer(function(req,res){
     });
 }).listen(9097,'127.0.0.1');
 
-console.log('服务器开启成功\n\n访问路径为http://localhost:9097/index.html\n');
+console.log('服务器开启成功\n\n访问路径为 http://127.0.0.1:9097/index.html\n');

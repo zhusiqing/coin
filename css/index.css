@@ -23,16 +23,16 @@ a.lang{
     text-transform: initial;
 }
 p,span,h1,h2,h3,h4,h5,a,button,div{
-    font-family: Microsoft YaHei, SimHei;
+    font-family: Helvetica ,Microsoft YaHei, SimHei;
 }
 .percentage, .section-heading, .trial .btn-trial{
-    font-family: Microsoft YaHei, SimHei;
+    font-family: Helvetica, Microsoft YaHei, SimHei;
 }
 .nav li a{
-    font-family: Microsoft YaHei, SimHei;
+    font-family: Helvetica, Microsoft YaHei, SimHei;
 }
 .details, .feature-title, .instructions, .monthly, .yearly{
-    font-family: Microsoft YaHei, SimHei;
+    font-family: Helvetica, Microsoft YaHei, SimHei;
 }
 /* 导航栏 */
 .navbar h1{
@@ -286,7 +286,7 @@ p,span,h1,h2,h3,h4,h5,a,button,div{
     background-color: #1d264a;
 }
 .solution .content h5{
-    color: #fff;
+    color: #58dfcd;
     text-align: left;
 }
 .solution .content p{
@@ -297,6 +297,7 @@ p,span,h1,h2,h3,h4,h5,a,button,div{
 .solution .content > div{
     display: flex;
     justify-content: center;
+    padding-left: 3em;
 }
 .solution .content > div > .img{
     flex: 1;
@@ -887,7 +888,9 @@ footer ,.footer-logos p{
     .solution .assets-img img{
         width: 90%;
     }
-
+    .solution .content > div{
+        padding-left: 1em;
+    }
     .be_found .text-2{
         font-size: 14px;
         padding: 0 20px;

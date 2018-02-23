@@ -1,4 +1,31 @@
+.trial div.content .percentage > span{
+    font-size: 22px;
+}
 .trial .block1 .percentage > span{
-    font-size: 24px;
     width: 10em;
+}
+.trial .block2 .percentage > span{
+    width: 10em;
+}
+.trial .block3 .percentage > span{
+    width: 12em;
+}
+.trial div.content .content-title{
+    bottom: 74px;
+}
+
+.trial .block3 .content-title > div{
+    margin-top: 30px;
+}
+.trial .block2 .content-title > div{
+    margin-top: 56px;
+}
+.technology .tech-box .tech-pc .tech-img > img{
+    width: 350px;
+}
+header .nav li a{
+    text-transform: capitalize;
+}
+.be_found .introduction .img-box > div > p{
+    line-height: 1.3em;
 }
