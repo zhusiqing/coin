@@ -526,7 +526,9 @@ p,span,h1,h2,h3,h4,h5,a,button,div{
 .technology .tech-box .tech-mb{
     display: none;
 }
-
+.technology div[data-localize="technology_img"] > img{
+    width: 400px;
+}
 /* 顾问 */
 .testimonials{
     background: url('../img/bg2.jpg') center 0 no-repeat;
@@ -1059,6 +1061,9 @@ footer ,.footer-logos p{
     }
     .technology .tech-box .tech-mb{
         display: flex;
+    }
+    .technology div[data-localize="technology_img"] > img{
+        width: 300px;
     }
     #pcTeam{
         display: none;
